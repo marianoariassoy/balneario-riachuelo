@@ -11,9 +11,6 @@ body {
 
 a {
   color: currentColor;
-  &:hover {
-    color: currentColor;
-  }
 }
 
 .font-semibold {
@@ -55,12 +52,10 @@ svg {
   background-color: #2b2b2b;
 }
 
-.indicators {
-  li {
-    margin: 0 0.3rem !important;
-  }
+.indicators li {
+  margin: 0 0.3rem !important;
 }
 
 #about {
-  background-image: url('./images/about.jpg');
+  background-image: url('/images/about.webp');
 }

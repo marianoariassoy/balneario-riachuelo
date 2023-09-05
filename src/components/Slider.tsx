@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
-import Loader from './Loader'
 
 type SliderItemProps = {
   src: string
@@ -20,9 +19,7 @@ const SliderItem = ({ src }: SliderItemProps) => {
 
   return (
     <div className='aspect-[4/5] lg:aspect-video'>
-      {isLoading ? (
-        <Loader />
-      ) : (
+      {isLoading ? null : (
         <img
           src={src}
           className='fade-in h-full w-full object-cover object-center'
