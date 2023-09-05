@@ -1,0 +1,111 @@
+---
+import "../assets/fonts/stylesheet.css";
+import "../styles/styles.css";
+import Header from '../components/Header.astro';
+import BannerTop from '../components/BannerTop.astro';
+import Slider from '../components/Slider.tsx';
+import About from '../components/About.astro';
+import Description from '../components/Description.astro';
+import Footer from '../components/Footer.astro';
+import { data } from '../data/data.ts'
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Balneario Riachuelo</title>
+    <link
+    rel="apple-touch-icon"
+    href="/assets/favicon.png"
+  />
+  <meta
+    property="og:type"
+    content="website"
+  />
+  <meta
+    property="og:site_name"
+    content="Balneario Riachuelo"
+  />
+  <meta
+    name="theme-color"
+    content="#FFFFFF"
+  />
+  <meta
+    name="msapplication-TileColor"
+    content="#FFFFFF"
+  />
+  <meta
+    name="msapplication-TileImage"
+    content="/assets/favicon.png"
+  />
+  <meta
+    name="application-name"
+    content="Balneario Riachuelo"
+  />
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+  <meta
+    name="googlebot"
+    content="index, follow"
+  />
+  <meta
+    name="author"
+    content="http://marianoarias.soy"
+  />
+
+  <meta
+    property="og:url"
+    content=" "
+  />
+  <meta
+    property="og:image"
+    content="/images/home1.jpg"
+  />
+  <meta
+    property="og:image:alt"
+    content="Balneario Riachuelo"
+  />
+  <link
+    rel="canonical"
+    href=" "
+  />
+  <meta
+    name="description"
+    content="Arquitectura de vanguardia para reapropiarse del espacio público perdido."
+  />
+  <meta
+    name="title"
+    content="Balneario Riachuelo"
+  />
+  <meta
+    property="og:title"
+    content="Balneario Riachuelo"
+  />
+  <meta
+    property="og:description"
+    content="Arquitectura de vanguardia para reapropiarse del espacio público perdido."
+
+  />
+	</head>
+	<body>  
+		<header class="m-auto max-w-5xl">
+      <Header />
+    </header>
+    <main class="m-auto max-w-5xl">
+      <BannerTop />
+      <section class="aspect-[4/5] lg:aspect-video">
+        <Slider data={data} client:load />
+      </section>
+      <About />
+      <Description />
+    </main>
+    <footer class="m-auto max-w-5xl">
+      <Footer />
+    </footer>
+	</body>
+</html>
