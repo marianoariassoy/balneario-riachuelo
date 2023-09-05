@@ -93,10 +93,10 @@ import { data } from '../data/data.ts'
   />
 	</head>
 	<body>  
-		<header class="m-auto max-w-5xl">
+		<header>
       <Header />
     </header>
-    <main class="m-auto max-w-5xl">
+    <main>
       <BannerTop />
       <section class="aspect-[4/5] lg:aspect-video">
         <Slider data={data} client:load />
@@ -104,7 +104,7 @@ import { data } from '../data/data.ts'
       <About />
       <Description />
     </main>
-    <footer class="m-auto max-w-5xl">
+    <footer>
       <Footer />
     </footer>
 	</body>

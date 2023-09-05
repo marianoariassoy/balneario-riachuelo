@@ -4,76 +4,81 @@ import { IconDimensiones, IconCapacidad, IconInstalaciones } from '../icons/icon
 
 <section class="p-12 lg:py-16">
 
-  <article class="flex flex-col gap-y-6 mb-16">
-    <div>
-      <IconDimensiones />
-    </div>
-    <div>
-      <h2 class="font-semibold border-b-4 border-black">DIMENSIONES</h2>
-    </div>
-    <div class="grid grid-cols-2 justify-between">
-      <div class="border-r border-black">
-        <span class="font-semibold text-xl block">Barcaza</span>
-        <span class="text-xl block">40 x 15 mt</span>
-        <span class="text-xs"> LARGO X ANCHO</span>
+  <div class="m-auto max-w-4xl">
+    
+    <article class="flex flex-col gap-y-6 mb-16">
+      <div>
+        <IconDimensiones />
       </div>
-      <div class="pl-8">
-        <span class="font-semibold text-xl block">Pileta</span>
-        <span class="text-xl block">40 x 15 x 1,5 mt</span>
-        <span class="text-xs">LARGO X ANCHO X PROFUNDIDAD</span>
+      <div>
+        <h2 class="font-semibold border-b-4 border-black">DIMENSIONES</h2>
       </div>
-    </div>
-  </article>
+      <div class="grid grid-cols-2 justify-between">
+        <div class="border-r border-black">
+          <span class="font-semibold text-xl block">Barcaza</span>
+          <span class="text-xl block">40 x 15 mt</span>
+          <span class="text-xs"> LARGO X ANCHO</span>
+        </div>
+        <div class="pl-8">
+          <span class="font-semibold text-xl block">Pileta</span>
+          <span class="text-xl block">40 x 15 x 1,5 mt</span>
+          <span class="text-xs">LARGO X ANCHO X PROFUNDIDAD</span>
+        </div>
+      </div>
+    </article>
+  
+    <article class="flex flex-col gap-y-6 mb-16">
+      <div>
+        <IconCapacidad />
+      </div>
+      <div>
+        <h2 class="font-semibold border-b-4 border-black">CAPACIDAD</h2>
+      </div>
+      <div class="grid grid-cols-2 justify-between">
+        <div class="border-r border-black text-xl pr-8">
+          <span class="font-semibold block">Uso verano</span>
+          Aprox. <span class="font-semibold">80 personas</span> en simultáneo*
+          <span class="text-xs block">* Se asignan turnos online de 2hs por persona.</span>
+        </div>
+        <div class="pl-8 text-xl">
+          <span class="font-semibold block">Uso invierno</span>
+          Aprox. <span class="font-semibold">100 personas</span> en simultáneo*
+          <span class="text-xs block">* Dependiendo del espactaculo.</span>
+        </div>
+      </div>
+    </article>
+  
+    <article class="flex flex-col gap-y-6">
+      <div>
+        <IconInstalaciones />
+      </div>
+      <div>
+        <h2 class="font-semibold border-b-4 border-black">INSTALACIONES</h2>
+      </div>
+      <div class="grid grid-cols-3 justify-between">
+        <div class="border-r border-black text-xl pr-8">
+          <span class="font-semibold block">Primer Nivel</span>
+          <span class="block">Pileta</span>
+          <span class="block">Deck</span>
+          <span class="block">Guardavida</span>
+        </div>
+        <div class="pl-8 text-xl">
+          <span class="font-semibold block">Subsuelo</span>
+          <span class="block">Vestuarios</span>
+          <span class="block">Baños</span>
+          <span class="block">Sala multiuso</span>
+          
+        </div>
+        <div class="pl-8 text-xl">
+          <span class="block">Oficina</span>
+          <span class="block">Lockers</span>
+          <span class="block">Depósito</span>
+          <span class="block">Enfermería</span>
+        </div>
+      </div>
+    </article>
+  </div>
 
-  <article class="flex flex-col gap-y-6 mb-16">
-    <div>
-      <IconCapacidad />
-    </div>
-    <div>
-      <h2 class="font-semibold border-b-4 border-black">CAPACIDAD</h2>
-    </div>
-    <div class="grid grid-cols-2 justify-between">
-      <div class="border-r border-black text-xl pr-8">
-        <span class="font-semibold block">Uso verano</span>
-        Aprox. <span class="font-semibold">80 personas</span> en simultáneo*
-        <span class="text-xs block">* Se asignan turnos online de 2hs por persona.</span>
-      </div>
-      <div class="pl-8 text-xl">
-        <span class="font-semibold block">Uso invierno</span>
-        Aprox. <span class="font-semibold">100 personas</span> en simultáneo*
-        <span class="text-xs block">* Dependiendo del espactaculo.</span>
-      </div>
-    </div>
-  </article>
 
-  <article class="flex flex-col gap-y-6">
-    <div>
-      <IconInstalaciones />
-    </div>
-    <div>
-      <h2 class="font-semibold border-b-4 border-black">INSTALACIONES</h2>
-    </div>
-    <div class="grid grid-cols-3 justify-between">
-      <div class="border-r border-black text-xl pr-8">
-        <span class="font-semibold block">Primer Nivel</span>
-        <span class="block">Pileta</span>
-        <span class="block">Deck</span>
-        <span class="block">Guardavida</span>
-      </div>
-      <div class="pl-8 text-xl">
-        <span class="font-semibold block">Subsuelo</span>
-        <span class="block">Vestuarios</span>
-        <span class="block">Baños</span>
-        <span class="block">Sala multiuso</span>
-        
-      </div>
-      <div class="pl-8 text-xl">
-        <span class="block">Oficina</span>
-        <span class="block">Lockers</span>
-        <span class="block">Depósito</span>
-        <span class="block">Enfermería</span>
-      </div>
-    </div>
-  </article>
 
 </section>
