@@ -7,13 +7,13 @@ import Slider from '../components/Slider.tsx';
 import About from '../components/About.astro';
 import Description from '../components/Description.astro';
 import Footer from '../components/Footer.astro';
-import { data } from '../data/data.ts'
+import { slider1, slider2 } from '../data/data.ts'
 ---
 
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Balneario Riachuelo</title>
@@ -60,11 +60,11 @@ import { data } from '../data/data.ts'
 
   <meta
     property="og:url"
-    content=" "
+    content="http://balnearioriachuelo.com.ar/"
   />
   <meta
     property="og:image"
-    content="/images/home1.jpg"
+    content="/images/facebook.jpg"
   />
   <meta
     property="og:image:alt"
@@ -72,7 +72,7 @@ import { data } from '../data/data.ts'
   />
   <link
     rel="canonical"
-    href=" "
+    href="http://balnearioriachuelo.com.ar/"
   />
   <meta
     name="description"
@@ -99,9 +99,12 @@ import { data } from '../data/data.ts'
     <main>
       <BannerTop />
       <section class="aspect-[4/5] lg:aspect-video">
-        <Slider data={data} client:load />
+        <Slider data={slider1} client:load />
       </section>
       <About />
+      <section class="aspect-[4/5] lg:aspect-video">
+        <Slider data={slider2} client:load />
+      </section>
       <Description />
     </main>
     <footer>
